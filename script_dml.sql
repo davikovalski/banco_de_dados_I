@@ -3,20 +3,18 @@
 -- Cenário: Startup de valorização de resíduos industriais
 -- Arquivo: script_dml.sql  (SGBD alvo: SQLite 3)
 -- Conteúdo: inserts com dados válidos para TODAS as tabelas.
--- A ordem respeita as FKs e as regras de negócio (ex.: laudo só depois
--- dos experimentos concluídos; rota só depois do laudo aprovado).
 -- =====================================================================
 
 PRAGMA foreign_keys = ON;
 
 -- ---------------- FUNCIONÁRIOS ----------------
 INSERT INTO funcionario (id_funcionario, nome, cpf, email, telefone, data_admissao, tipo) VALUES
- (1, 'Ana Beatriz Souza',     '11122233344', 'ana.souza@revalora.com.br',    '48999010001', '2023-02-01', 'TECNICO'),
- (2, 'Bruno Henrique Lima',   '22233344455', 'bruno.lima@revalora.com.br',   '48999010002', '2023-05-15', 'TECNICO'),
+ (1, 'Renata Beatriz Souza',     '11122233344', 'renata.souza@revalora.com.br',    '48999010001', '2023-02-01', 'TECNICO'),
+ (2, 'Willian Henrique Lima',   '22233344455', 'willian.lima@revalora.com.br',   '48999010002', '2023-05-15', 'TECNICO'),
  (3, 'Carla Mendes Rocha',    '33344455566', 'carla.rocha@revalora.com.br',  '48999010003', '2024-03-10', 'TECNICO'),
- (4, 'Diego Fernandes Alves', '44455566677', 'diego.alves@revalora.com.br',  '48999010004', '2025-01-20', 'TECNICO'),
+ (4, 'Marina Fernandes Alves', '44455566677', 'marina.alves@revalora.com.br',  '48999010004', '2025-01-20', 'TECNICO'),
  (5, 'Eduarda Martins Costa', '55566677788', 'eduarda.costa@revalora.com.br','48999010005', '2023-02-01', 'ADMINISTRATIVO'),
- (6, 'Felipe Araujo Nunes',   '66677788899', 'felipe.nunes@revalora.com.br', '48999010006', '2024-07-01', 'ADMINISTRATIVO'),
+ (6, 'Mateus Araujo Nunes',   '66677788899', 'mateus.nunes@revalora.com.br', '48999010006', '2024-07-01', 'ADMINISTRATIVO'),
  (7, 'Gabriela Teixeira',     '77788899900', 'gabriela.t@revalora.com.br',   NULL,          '2025-04-14', 'ADMINISTRATIVO');
 
 INSERT INTO funcionario_tecnico (id_funcionario, formacao, registro_conselho, especialidade) VALUES
