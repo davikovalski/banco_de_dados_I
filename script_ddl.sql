@@ -3,9 +3,7 @@
 -- Cenário: Startup de valorização de resíduos industriais
 -- Arquivo: script_ddl.sql  (SGBD alvo: SQLite 3)
 -- Conteúdo: criação de tabelas com PK, FK, NOT NULL, UNIQUE, CHECK,
---           DEFAULT e ações referenciais, e uma view de apoio.
---           Sem triggers: regras que dependem de outras tabelas são
---           garantidas pela aplicação (ver docs/01_requisitos.md).
+--           DEFAULT.
 -- =====================================================================
 
 PRAGMA foreign_keys = ON;
